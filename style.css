@@ -1,280 +1,409 @@
 /* ===========================
-   Premium Modern UI Styling
+    Premium Modern UI Styling
 =========================== */
 :root {
-  --primary-color: #3B82F6; /* Refined Blue */
-  --secondary-color: #06D6A0; /* Elegant Teal */
-  --accent-color: #FF9F43; /* Warm Orange */
-  --text-color: #2B2D42;
-  --muted-text: #6c757d;
-  --light-bg: #f4f6f9;
-  --dark-bg: #1F2937;
-  --card-bg: #ffffff;
-  --border-color: #e5e7eb;
-  --radius: 16px;
-  --transition: all 0.35s ease;
-  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
-  --shadow-medium: 0 6px 25px rgba(0, 0, 0, 0.08);
+    --primary-color: #3B82F6; /* Refined Blue */
+    --secondary-color: #06D6A0; /* Elegant Teal */
+    --accent-color: #FF9F43; /* Warm Orange */
+    --text-color: #2B2D42;
+    --muted-text: #6c757d;
+    --light-bg: #f4f6f9;
+    --dark-bg: #1F2937;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --radius: 16px;
+    --transition: all 0.35s ease;
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 6px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* Global Reset */
 body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: var(--light-bg);
-  color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--light-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 /* ---------------------------
-   Header
+    Header
 --------------------------- */
 header {
-  background: linear-gradient(135deg, var(--primary-color), #2563eb);
-  color: #fff;
-  padding: 3rem 1.5rem;
-  text-align: center;
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-  box-shadow: var(--shadow-medium);
+    background: linear-gradient(135deg, var(--primary-color), #2563eb);
+    color: #fff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    box-shadow: var(--shadow-medium);
 }
 
 header h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 0.6rem;
-  letter-spacing: -1px;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+    letter-spacing: -1px;
 }
 
 header p {
-  font-size: 1.15rem;
-  max-width: 700px;
-  margin: 0 auto;
-  opacity: 0.95;
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
 }
 
 /* ---------------------------
-   Navigation
+    Navigation
 --------------------------- */
 nav {
-  background-color: var(--dark-bg);
-  padding: 0.85rem 1.2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: var(--dark-bg);
+    padding: 0.85rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 nav button {
-  background: rgba(255,255,255,0.05);
-  color: #f1f1f1;
-  border: 1px solid transparent;
-  padding: 0.7rem 1.6rem;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-  backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.05);
+    color: #f1f1f1;
+    border: 1px solid transparent;
+    padding: 0.7rem 1.6rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    backdrop-filter: blur(6px);
 }
 
 nav button:hover {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.2);
 }
 
 nav button.active {
-  background: var(--secondary-color);
-  color: var(--dark-bg);
-  border-color: var(--secondary-color);
-  box-shadow: var(--shadow-soft);
+    background: var(--secondary-color);
+    color: var(--dark-bg);
+    border-color: var(--secondary-color);
+    box-shadow: var(--shadow-soft);
 }
 
 /* ---------------------------
-   Main Content
+    Main Content
 --------------------------- */
 main {
-  flex-grow: 1;
-  padding: 3rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+    flex-grow: 1;
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .infographic-section {
-  background-color: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 2.2rem;
-  margin-bottom: 2.5rem;
-  display: none;
-  animation: fadeIn 0.6s ease-out forwards;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    padding: 2.2rem;
+    margin-bottom: 2.5rem;
+    display: none;
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
 .infographic-section.active {
-  display: block;
+    display: block;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .infographic-section h2 {
-  font-size: 2.3rem;
-  color: var(--primary-color);
-  margin-bottom: 1.6rem;
-  text-align: center;
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 1rem;
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.6rem;
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
 }
 
 /* ---------------------------
-   Section Content
+    Section Content
 --------------------------- */
 .section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+/* This is the existing Tablet/Desktop layout switch */
 @media (min-width: 768px) {
-  .section-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+    .section-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 
 .chart-container, .text-content {
-  flex: 1;
-  min-width: 320px;
-  background-color: var(--light-bg);
-  padding: 1.6rem;
-  border-radius: var(--radius);
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.04);
+    flex: 1;
+    min-width: 320px;
+    background-color: var(--light-bg);
+    padding: 1.6rem;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.04);
 }
 
 .text-content h3 {
-  font-size: 1.6rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .text-content ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .text-content ul li {
-  margin-bottom: 0.85rem;
-  padding-left: 1.6rem;
-  position: relative;
-  font-size: 1.05rem;
-  color: var(--muted-text);
+    margin-bottom: 0.85rem;
+    padding-left: 1.6rem;
+    position: relative;
+    font-size: 1.05rem;
+    color: var(--muted-text);
 }
 
 .text-content ul li::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 8px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
 }
 
 /* ---------------------------
-   Controls
+    Controls
 --------------------------- */
 .section-controls {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.6rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.section-controls label {
+    font-weight: 600;
+    color: var(--text-color);
 }
 
 .section-controls select,
 .section-controls button {
-  padding: 0.65rem 1.1rem;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
-  background-color: #fff;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: var(--transition);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    padding: 0.65rem 1.1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .section-controls button {
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  font-weight: 600;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-weight: 600;
 }
 
 .section-controls button:hover {
-  background: #2563eb;
+    background: #2563eb;
 }
 
 /* ---------------------------
-   Download Button
+    Download Button
 --------------------------- */
+/* Set position relative for the chart container to position the button correctly */
+.chart-container {
+    position: relative;
+}
+
 .download-chart-btn {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  background: var(--accent-color);
-  color: white;
-  border: none;
-  padding: 0.55rem 1.1rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: var(--transition);
-  box-shadow: var(--shadow-soft);
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-soft);
 }
 
 .download-chart-btn:hover {
-  background: #e9892d;
+    background: #e9892d;
 }
 
 /* ---------------------------
-   Footer
+    Footer
 --------------------------- */
 footer {
-  background-color: var(--dark-bg);
-  color: #d1d5db;
-  text-align: center;
-  padding: 1.8rem 1.2rem;
-  margin-top: auto;
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
-  font-size: 0.95rem;
+    background-color: var(--dark-bg);
+    color: #d1d5db;
+    text-align: center;
+    padding: 1.8rem 1.2rem;
+    margin-top: auto;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+    font-size: 0.95rem;
+}
+
+/* ===========================
+    RESPONSIVE ADJUSTMENTS
+=========================== */
+
+/* ---------------------------
+    1. Large Desktop (Above 1200px)
+--------------------------- */
+@media (min-width: 1200px) {
+    main {
+        padding: 4rem 0; /* Less side padding since max-width is hit */
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    .infographic-section h2 {
+        font-size: 2.6rem;
+    }
+    
+    /* Ensure text content can take up less space if chart needs more */
+    .chart-container {
+        flex: 2; /* Chart gets 2/3 space */
+    }
+    .text-content {
+        flex: 1; /* Text gets 1/3 space */
+    }
 }
 
 /* ---------------------------
-   Responsive Adjustments
+    2. Medium Devices (Tablets, 768px - 1199px)
 --------------------------- */
-@media (max-width: 600px) {
-  header h1 { font-size: 2.2rem; }
-  header p { font-size: 0.95rem; }
-  nav button { padding: 0.6rem 1.1rem; font-size: 0.9rem; }
-  .infographic-section h2 { font-size: 1.8rem; }
-  .infographic-section { padding: 1.6rem; }
-  .chart-container, .text-content { padding: 1.2rem; }
-  .download-chart-btn { top: 12px; right: 12px; padding: 0.45rem 0.9rem; font-size: 0.8rem; }
+/* No major changes needed here, as the default and min-width: 768px cover this well.
+   Only minor spacing adjustments. */
+@media (min-width: 768px) and (max-width: 1199px) {
+    main {
+        padding: 2rem 2rem;
+    }
+}
+
+/* ---------------------------
+    3. Small Devices (Mobiles, Max 767px)
+--------------------------- */
+@media (max-width: 767px) {
+    /* Header Scaling */
+    header {
+        padding: 2rem 1rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Main Container and Section Adjustments */
+    main {
+        padding: 1.5rem 1rem;
+    }
+    .infographic-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .infographic-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.8rem;
+    }
+    
+    /* Navigation: Slightly tighter on mobile */
+    nav {
+        padding: 0.7rem 1rem;
+        gap: 8px;
+    }
+    nav button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Controls: Stack controls vertically if they overflow */
+    .section-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    .section-controls select,
+    .section-controls button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    /* Content: Ensure components take full width */
+    .chart-container, .text-content {
+        min-width: unset;
+        width: 100%;
+        padding: 1.2rem;
+    }
+    
+    /* Download Button: Move to center bottom for better mobile tapping */
+    .download-chart-btn {
+        position: static; /* Remove absolute positioning */
+        margin-top: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.7rem;
+    }
+}
+
+/* ---------------------------
+    4. Smallest Screens (Below 480px)
+--------------------------- */
+@media (max-width: 480px) {
+    /* Tighten up navigation even more */
+    nav button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        /* Allow buttons to wrap to a new line more easily */
+        flex-grow: 1; 
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .text-content ul li {
+        font-size: 0.95rem;
+    }
 }
