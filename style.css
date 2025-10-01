@@ -2,9 +2,9 @@
    Premium Modern UI Styling
 =========================== */
 :root {
-  --primary-color: #3B82F6; /* Refined Blue */
-  --secondary-color: #06D6A0; /* Elegant Teal */
-  --accent-color: #FF9F43; /* Warm Orange */
+  --primary-color: #3B82F6;
+  --secondary-color: #06D6A0;
+  --accent-color: #FF9F43;
   --text-color: #2B2D42;
   --muted-text: #6c757d;
   --light-bg: #f4f6f9;
@@ -269,6 +269,8 @@ footer {
 /* ---------------------------
    Responsive Adjustments
 --------------------------- */
+
+/* Smartphones (up to 600px) */
 @media (max-width: 600px) {
   header h1 { font-size: 2.2rem; }
   header p { font-size: 0.95rem; }
@@ -277,4 +279,27 @@ footer {
   .infographic-section { padding: 1.6rem; }
   .chart-container, .text-content { padding: 1.2rem; }
   .download-chart-btn { top: 12px; right: 12px; padding: 0.45rem 0.9rem; font-size: 0.8rem; }
+}
+
+/* Tablets (601px - 900px) */
+@media (max-width: 900px) and (min-width: 601px) {
+  header h1 { font-size: 2.6rem; }
+  header p { font-size: 1rem; }
+  nav { gap: 8px; }
+  nav button { padding: 0.65rem 1.2rem; font-size: 0.95rem; }
+  .section-content { flex-direction: column; }
+}
+
+/* Small Laptops (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  header h1 { font-size: 2.8rem; }
+  .section-content { gap: 1.5rem; }
+  .chart-container, .text-content { padding: 1.4rem; }
+}
+
+/* Large Screens (above 1400px) */
+@media (min-width: 1400px) {
+  header h1 { font-size: 3.2rem; }
+  main { max-width: 1400px; }
+  .infographic-section h2 { font-size: 2.6rem; }
 }
