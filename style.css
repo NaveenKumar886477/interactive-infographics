@@ -303,3 +303,44 @@ footer {
   main { max-width: 1400px; }
   .infographic-section h2 { font-size: 2.6rem; }
 }
+/* Smooth fade-in for sections */
+.infographic-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.infographic-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header fade-in */
+header {
+  animation: fadeSlideDown 0.8s ease-out;
+}
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons hover effect */
+nav button, 
+.section-controls button, 
+.download-chart-btn {
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+nav button:hover,
+.section-controls button:hover,
+.download-chart-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Chart container slight pop on load */
+.chart-container {
+  animation: fadeZoom 0.6s ease;
+}
+@keyframes fadeZoom {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
