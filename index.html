@@ -16,12 +16,14 @@
     <h1>Global Technology Trends: An Interactive Overview</h1>
     <p>Explore key insights into the ever-evolving world of technology, from market shares to user growth and emerging innovations.</p>
   </header>
-
-  <nav>
-    <button id="nav-market-share" class="active">Market Share</button>
-    <button id="nav-user-growth">User Growth</button>
-    <button id="nav-emerging-tech">Emerging Tech</button>
-  </nav>
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navMenu">
+    <button>Market Share</button>
+    <button>User Growth</button>
+    <button>Emerging Tech</button>
+  </div>
+</nav>
 
   <main>
     <!-- Market Share Section -->
@@ -195,6 +197,9 @@
 
       // --- Chart Functions ---
 
+        function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+  }
       // Function to create/update Market Share Chart
       const updateMarketShareChart = () => {
         const year = marketYearSelect.value;
